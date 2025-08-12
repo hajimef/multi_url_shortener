@@ -31,7 +31,7 @@ class ShortenWorker(QThread):
 
             total_urls = len(urls_to_shorten)
             if total_urls == 0:
-                self.finished.emit("��縮するURLが見つかりませんでした。")
+                self.finished.emit("短縮するURLが見つかりませんでした。")
                 return
 
             for i, cell in enumerate(urls_to_shorten):
